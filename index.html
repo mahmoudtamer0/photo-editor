@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <title>photo editor</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1> Photo Editor by Mahmoud Tamer</h1>
+            <div class="secs">
+                <div class="img">
+                    <div class="img-box">
+                        <img alt="" id="img">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                    <div class="upload">
+                        <label for="upload" id="lab-up">Upload Photo</label>
+                        <input type="file" id="upload">
+                    </div>
+                </div>
+                <div class="inputs">
+                    <ul>
+                        <li>
+                            <div class="label">
+                                <label for="saturate">Saturate</label>
+                                <span id="sattotal"></span>
+                            </div>
+                            <input oninput="gettotal(this.name)" type="range" name="satu" id="saturate" min="0"
+                                max="200" value="100">
+                        </li>
+                        <li>
+                            <div class="label">
+                                <label for="contrast">Contrast</label>
+                                <span id="conttotal"></span>
+                            </div>
+                            <input oninput="gettotal()" type="range" id="contrast" min="0" max="200" value="100">
+                        </li>
+                        <li>
+                            <div class="label">
+                                <label for="Brightness">Brightness</label>
+                                <span id="brighttotal"></span>
+                            </div>
+                            <input oninput="gettotal()" type="range" id="Brightness" min="0" max="200" value="100">
+                        </li>
+                        <li>
+                            <div class="label">
+                                <label for="sepia">Sepia</label>
+                                <span id="sepiatotal"></span>
+                            </div>
+                            <input oninput="gettotal()" type="range" id="sepia" min="0" max="200" value="0">
+                        </li>
+                        <li>
+                            <div class="label">
+                                <label for="grayscale">Grayscale</label>
+                                <span id="graytotal"></span>
+                            </div>
+                            <input oninput="gettotal()" type="range" id="grayscale" step="0.1" min="0" max="1"
+                                value="0">
+                        </li>
+                        <li>
+                            <div class="label">
+                                <label for="blur">Blur</label>
+                                <span id="blurtotal"></span>
+                            </div>
+                            <input oninput="gettotal()" type="range" id="blur" step="0.1" min="0" max="10" value="0">
+                        </li>
+                        <li>
+                            <div class="label">
+                                <label for="huerotate">Hue Rotate</label>
+                                <span id="huetotal"></span>
+                            </div>
+                            <input oninput="gettotal()" type="range" id="huerotate" min="0" max="350" value="0">
+                        </li>
+                        <li>
+                            <a download="edited_imag.jpg" id="download">Dowload</a>
+                            <span id="reset">Reset</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

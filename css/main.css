@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #333;
+}
+
+@media (min-width : 550px) {
+    /* .container {
+        max-width: 320px;
+    } */
+}
+
+@media (min-width : 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+/* medium*/
+@media (min-width : 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+/* larg*/
+@media (min-width : 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+.container {
+    background-color: #222;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    /* display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 20px; */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.secs {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 20px;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box {
+    width: 520px;
+}
+
+.img img,
+canvas {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.upload input {
+    display: none;
+}
+
+.upload label {
+    color: #fff;
+    padding: 8px 20px;
+    border: 2px dashed white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.upload label:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.inputs ul,
+.inputs ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    direction: rtl;
+    color: white;
+}
+
+li label {
+    columns: #fff;
+}
+
+.inputs ul li:last-child {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.inputs ul li a,
+span#reset {
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #060;
+    cursor: pointer;
+    border-radius: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.inputs ul li span#reset:hover {
+    background-color: #fff;
+    color: #060;
+}
+
+.inputs ul li a:hover {
+    background-color: #fff;
+    color: #060;
+}
+
+@media (max-width:767px) {
+    .container .secs {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width:575px) {
+    .img-box {
+        width: 310px;
+    }
+
+    .inputs ul li {
+        gap: 13px;
+    }
+
+    /* .inputs {
+        width: 315px;
+    } */
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label span {
+    background-color: #323a3d;
+    padding: 2px 2px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
