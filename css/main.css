@@ -113,7 +113,7 @@ li label {
     justify-content: space-around;
 }
 
-.inputs ul li a,
+.inputs ul li a#download,
 span#reset {
     color: #fff;
     padding: 10px 20px;
@@ -129,7 +129,7 @@ span#reset {
     color: #060;
 }
 
-.inputs ul li a:hover {
+.inputs ul li a#download:hover {
     background-color: #fff;
     color: #060;
 }
