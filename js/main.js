@@ -74,6 +74,13 @@ function resete() {
     hue.value = 0;
     ctx.filter = 'none';
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    sattotal.innerHTML = 100;
+    conttotal.innerHTML = 100;
+    brighttotal.innerHTML = 100;
+    sepiatotal.innerHTML = 0;
+    graytotal.innerHTML = 0;
+    blurtotal.innerHTML = 0;
+    huetotal.innerHTML = 0;
 }
 reset.addEventListener('click', function () {
     resete()
