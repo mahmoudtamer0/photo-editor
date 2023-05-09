@@ -39,9 +39,6 @@ body {
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    /* display: grid;
-    grid-template-columns: 5fr 3fr;
-    gap: 20px; */
 }
 
 h1 {
@@ -102,6 +99,7 @@ canvas {
     gap: 25px;
     direction: rtl;
     color: white;
+    padding: 0;
 }
 
 li label {
